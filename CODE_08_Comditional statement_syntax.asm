@@ -42,45 +42,46 @@ main proc
     int 21h       ; second input
     mov cl,al
     
-    cmp bl,cl     ; compare bl>cl (similare to if)
-    jg Big        ; bl>cl then go to Big level 
+    cmp bl,cl     ; compare bl>cl
+    jg Big        ; bl>cl then go to level Big. 
                 
-    cmp bl,cl     ; (similare to else if)
-    je Equal      ; bl = cl
+    je Equal      ; bl = cl then go to level Euual.
     
-    cmp bl,cl     ;(similare to else if)
-    jl Small      ; bl<cl
+    jl Small      ; bl<cl   the go to level Small
     
     jmp End
     
     Big:          ; level Big
     printn
-    print "First value is Bigger : "
+    print "First value is Big : "
     
     mov ah,2
     mov dl,bl     
     int 21h
+    jmp End
     
     Equal:          ; level Equal
     printn
-    print "Both value is equal :  "
+    print "Both value are equal :  "
     
     mov ah,2
     mov dl,bl      
     int 21h
+    jmp End
     
     Small:          ; level Small
     printn
-    print "'Second value is Bigger :  "
+    print "Second value is Big :  "
     
     mov ah,2
     mov dl,cl      
-    int 21h 
+    int 21h
+    jmp End 
     
-     End:
-     
+    End:
     
-   
+     ret
+       
     
     main endp  ; Execute the program
 end main
