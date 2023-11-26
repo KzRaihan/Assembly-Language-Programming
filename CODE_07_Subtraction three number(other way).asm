@@ -1,4 +1,4 @@
-;thre input from user and Subtraction them.
+;three input from user and Subtraction them.
 
 include emu8086.inc
 
