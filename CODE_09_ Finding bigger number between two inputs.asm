@@ -44,7 +44,7 @@ main proc
     je Equal        ; bl == bh || jump level(Black or statement) Equal whereas, bl is Equal than bh.
     
     
-    Big:
+    Big:    
     printn
     print "The first digit is big"
     printn
