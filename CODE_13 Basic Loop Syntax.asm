@@ -66,12 +66,7 @@ main proc
     main endp    ; Terminal the program.
 end main
 
-
-
-
-;                                -----****** Explain Code **** --------
-
-
+;     -----****** Explain Code **** --------
 
 ;-> mov cx,10
 
@@ -80,16 +75,16 @@ end main
 
 ;-> mov dl,48
 
-; >> dl is basically using for display any Decimal
+; >> dl is basically using for display.
 ; >> 48 is accii value of zero(0).
 
 
 
      
-;    mov ah,2  || when as this instruction then
-; >> Fisrt input: 48 or accii value of 48 or zero(0).
+;    mov ah,2  || output funtion
+; >> Fisrt Output: 48 or accii value of 48 or zero(0).
 ; >> ............
-; >> Last input: 58 or 9.
+; >> Last Output: 58 or 9.
 
 ; 
 ;     int 21h || call and execute above function.
