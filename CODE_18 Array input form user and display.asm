@@ -55,7 +55,7 @@ main proc
      mov dl,[si]
      int 21h
      
-     inc si
+     inc si 
      
      mov dl,32  ; space
      int 21h

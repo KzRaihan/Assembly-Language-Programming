@@ -15,11 +15,13 @@ main proc
     int 21h      ; Input part
     mov bl,al
     
+    printn
+    
     mov ah,2     ; Output part
     mov dl,bl
     int 21h
     
-    mov ah,4ch   ; return part
+    mov ah,4ch   ; Terminal part
     int 21h
     main endp
 end main
