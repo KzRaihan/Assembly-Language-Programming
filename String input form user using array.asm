@@ -52,12 +52,7 @@ main proc
      
     loop lparrayOp 
     
-    
-    
-    
-    
-    
-    
+     
     
     
    main endp

@@ -21,7 +21,7 @@ rew db ?
     
     print "Enter string: " 
    
-   ; progam counting or length count 
+   ; program counting or length count 
      
      mov si,offset arr
      mov cl,0           

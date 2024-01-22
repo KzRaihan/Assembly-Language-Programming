@@ -31,7 +31,7 @@ main proc
     
     ; calculation and compare
     
-    mov bl,2
+    mov bl,2    ; al / bl . al = quotient and ah = remainder.
     div bl      ; remainder is store in ah register
     
     ; compare
